@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <script src="https://kit.fontawesome.com/90362dfb53.js" crossorigin="anonymous"></script>
+    <style>
+        .login-container {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        h1 {
+            color: rgb(241, 10, 241);
+            text-align: center;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .login-form input,
+        button {
+            margin-top: 10px;
+            font-size: 1.5em;
+            border: 1px solid grey;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .login-form button {
+            background-color: rgb(172, 131, 151);
+        }
+
+        .login-form button:hover {
+            background-color: hotpink;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(235, 11, 48);
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            margin-right: 50px;
+            padding-right: 50px;
+            font-size: 2em;
+
+        }
+
+        body {
+            background-image: url("https://image.shutterstock.com/image-photo/old-brick-black-color-wall-260nw-1605128917.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .Home-menue {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="Home-menue">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Order</a>
+                <a href="">Others</a>
+            </span>
+            <span class="logo">
+                <a href=""><i class="fas fa-user"></i></a>
+                <a href=""><i class="fas fa-sign-out-alt"></i></a>
+
+            </span>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form class="login-form" action="">
+            <h1>Login</h1>
+            <input type="text" placeholder="Your Name" required>
+            <input type="password" placeholder="Password" required>
+            <button>Submit</button>
+        </form>
+    </section>
+
+
+</body>
+
+</html>
